@@ -6,6 +6,7 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent
+        
       ],
     }).compileComponents();
   });
@@ -19,7 +20,7 @@ describe('AppComponent', () => {
   it(`should have as title 'apm-new'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('apm-new');
+    expect(app.pageTitle).toEqual('apm-new');
   });
 
   it('should render title', () => {
